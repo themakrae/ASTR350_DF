@@ -13,7 +13,7 @@ The files in this repository are drafts of Python scripts for calculating the ph
     python script1.py &
     python script2.py &
 
-`phase_delay_calc.py` - This script uses concepts from the Multi-RTL block and other correlation techniques to calculate the phase delay between receivers. It takes in the data CSV files as an input and outputs the phase delay values from throughout the data collection period.
+`phase_delay_calc.py` - This script uses concepts from the Multi-RTL block and other correlation techniques to calculate the phase delay between receivers. It takes in the data CSV files as an input and outputs the phase delay values from throughout the data collection period in another CSV file.
 
 ## Installations
 
