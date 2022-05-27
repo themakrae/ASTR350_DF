@@ -4,7 +4,7 @@ from rtlsdr import RtlSdr
 serial_numbers = RtlSdr.get_device_serial_addresses()
 
 # Find device index for given serial number
-device_index = RtlSdr.get_device_index_by_seril('0000001')
+device_index = RtlSdr.get_device_index_by_serial('0000001')
 
 print(serial_numbers)
 print(device_index)
