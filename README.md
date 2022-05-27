@@ -8,7 +8,7 @@ The files in this repository are drafts of Python scripts for calculating the ph
 
 `sdr_2_data.py` - This script serves the same function as above but for the second dongle. The scripts are identical with the exception of the dongle number. 
 
-**Note: Regardless of the number of dongles you are working with, all of the data collection scripts must be run *in parallel*. This can be done through the following example command:**
+**Note: Regardless of the number of dongles you are working with, all of the data collection scripts must be run *in parallel*. This can be done through the use of threading or the following example command:**
 
     python script1.py &
     python script2.py &
