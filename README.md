@@ -2,7 +2,7 @@
 
 The files in this repository are drafts of Python scripts for calculating the phase delay between two RTL-SDR channels in an attempt to create a multi-channel direction finding system. 
 
-`identify_index.py` - This script identifies the index values of all of the detected RTL-SDR dongles. Knowing these values allows you to work with more than one dongle.
+`identify_index.py` - This script identifies the index values of all of the detected RTL-SDR dongles. Knowing these values allows you to work with more than one dongle. You can use the `rtl_eepom` utility package for customizing device serial numbers.
 
 `sdr_1_data.py` - This script collects data from one of the connected RTL-SDR dongles and stores it in a CSV file of the same name.
 
