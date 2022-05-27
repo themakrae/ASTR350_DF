@@ -32,8 +32,9 @@ for i in sdr_1_data:
     index = sdr_1_data.index(i)
     sdr_1 = sdr_1_data[index]
     sdr_2 = sdr_2_data[index]
-    corr = sgn.correlate(sdr_1, sdr_2, mode = 'full')
-    delay = np.argmax(corr)
+    correlation = sgn.correlate(sdr_1-np.mean(sdr_1), sdr_2 - np.mean(sdr_2), mode="full")
+    delays = sgn.correlation_lags(len(sdr_1), len(sdr_2), mode="full")
+    delay = delays[np.argmax(abs(correlation))]
     phase_delays.append(delay)
 
 # Create and write data to file
